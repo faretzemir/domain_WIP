@@ -130,17 +130,16 @@ def create_grid(sess_img_grid):
                 #pw1.append(p1)
 
     print(f"PW1 Indexes = ",pw1)
-    if pw1 is not None:
-        for i in range(len(pw1)):
-            index2alph.append(alph_list[pw1[i]-1])
-        print(f"PW1 Index2Alph = ",index2alph)
+    for i in range(len(pw1)):
+        index2alph.append(alph_list[pw1[i]-1])
+    print(f"PW1 Index2Alph = ",index2alph)
 
-        for i in range(len(index2alph)):
-            for j in range(len(kbd2num)):
-                if(index2alph[i] in kbd2num[j]):
-                    #print(j+1) # This part takes the number as an integer
-                    pw2num.append(j+1)
-        pw2num.sort()
+    for i in range(len(index2alph)):
+        for j in range(len(kbd2num)):
+            if(index2alph[i] in kbd2num[j]):
+                #print(j+1) # This part takes the number as an integer
+                pw2num.append(j+1)
+    pw2num.sort()
 
     x = st.text_input("Enter Key", value=default_val, key="value")
     st.write(x)
