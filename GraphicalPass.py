@@ -43,7 +43,7 @@ st.markdown(
     """
    This project was made entirely using **Streamlit**.
     
-    Faretz Emir Imran (1171100781)\n
+    Faretz Emir Imran (REDACTED)\n
     **Made in partial fulfilment for Masters of Engineering Science**.
 
     Supervisor: Assoc. Prof. Ir. Dr. Goh Vik Tor\n
