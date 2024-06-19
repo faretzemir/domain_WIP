@@ -9,7 +9,7 @@ from pyunsplash import PyUnsplash
 show_pages(
     [
         Page("GraphicalPass.py", "Home", "🏠"),
-        Page("pages/13_WIP.py", "WIP", "🎮"),
+        Page("pages/1_WIP.py", "WIP", "🎮"),
         Page("pages/login_PassImg.py", "Login_Splash", "🖥️"),
         Page("pages/AccessDenied.py", "AccessDenied", "❌")
     ]
