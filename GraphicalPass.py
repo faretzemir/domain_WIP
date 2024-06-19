@@ -4,7 +4,7 @@ from streamlit_image_coordinates import streamlit_image_coordinates
 #import extra_streamlit_components as stx
 from streamlit_extras.switch_page_button import switch_page
 from st_pages import Page, show_pages, hide_pages
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from pathlib import Path
 
 st.set_page_config(
@@ -18,12 +18,6 @@ st.set_page_config(
 show_pages(
     [
         Page("GraphicalPass.py", "Home", "🏠"),
-        Page("pages/0_Testing.py", "TestPage", "🚧"),
-        Page("pages/1_PassImg.py", "PassImg", "🖼️"),
-        Page("pages/2_PathPass.py", "PathPass", "📸"),
-        Page("pages/8_MyDSM_v6.py", "MyDSM_v6", "🎮"),
-        Page("pages/9_StoryBoard2.py", "StoryBoard", "🎮"),
-        Page("pages/10_StoryBoard3.py", "StoryBoard3", "🎮"),
         Page("pages/13_WIP.py", "WIP", "🎮"),
         Page("pages/login_PassImg.py", "Login_Splash", "🖥️"),
         Page("pages/AccessDenied.py", "AccessDenied", "❌")
@@ -38,8 +32,8 @@ hide_pages(
     ]
 )
 
-load_dotenv()
-dotenv_path = Path('/env')
+#load_dotenv()
+#dotenv_path = Path('/env')
 
 st.write("# Welcome to Graphical Passwords!")
 

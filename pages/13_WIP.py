@@ -4,18 +4,11 @@ from streamlit_extras.switch_page_button import switch_page
 from st_clickable_images import clickable_images
 from st_pages import Page, show_pages, hide_pages
 from pyunsplash import PyUnsplash
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
      
 show_pages(
     [
         Page("GraphicalPass.py", "Home", "🏠"),
-        Page("pages/0_Testing.py", "TestPage", "🚧"),
-        Page("pages/1_PassImg.py", "PassImg", "🖼️"),
-        Page("pages/2_PathPass.py", "PathPass", "📸"),
-        Page("pages/8_MyDSM_v6.py", "MyDSM_v6", "🎮"),
-        Page("pages/9_StoryBoard2.py", "StoryBoard2", "🎮"),
-        Page("pages/11_StoryBoard4.py", "StoryBoard4", "🎮"),
-        Page("pages/12_StoryBoard5.py", "StoryBoard5", "🎮"),
         Page("pages/13_WIP.py", "WIP", "🎮"),
         Page("pages/login_PassImg.py", "Login_Splash", "🖥️"),
         Page("pages/AccessDenied.py", "AccessDenied", "❌")
@@ -55,8 +48,9 @@ zero = ("P",) # Make sure to put comma at the end if single variable to indicate
 kbd2num = [one, two, three, four, five, six, seven, eight, nine, zero]
 
 # Loading the environment files
-load_dotenv()
-pu = PyUnsplash(api_key=os.getenv('SB3_API'))
+#load_dotenv()
+#pu = PyUnsplash(api_key=os.getenv('SB3_API'))
+pu = PyUnsplash(api_key=st.secrets["SB3_API"])
 
 # Other file preamble
 a2z = "ABCDEFGHIKLMNOPQRSTUVWYZ" # X taken out
