@@ -8,5 +8,6 @@ Working with the limitations, I managed to get my prototype up and running.
 ## How It Works
 --TBA--
 
+## Deployment
 View the deployed app: https://domain-wip3.streamlit.app
 
